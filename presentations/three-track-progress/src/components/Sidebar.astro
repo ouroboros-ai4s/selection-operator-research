@@ -1,0 +1,25 @@
+---
+import { getCollection } from 'astro:content';
+const { currentSlug } = Astro.props as { currentSlug: string };
+const all = (await getCollection('pages')).sort((a, b) => a.data.order - b.data.order);
+const chapters: Record<string, { label: string; items: typeof all }> = {
+  ch1: { label: 'Ch.1 项目全景', items: [] },
+  ch2: { label: 'Ch.2 DES 沙盒', items: [] },
+  ch3: { label: 'Ch.3 φ 模拟推断', items: [] },
+  ch4: { label: 'Ch.4 σ 解析反演', items: [] },
+  ch5: { label: 'Ch.5 三线收口', items: [] }
+};
+for (const p of all) chapters[p.data.chapter].items.push(p);
+---
+<aside class="sidebar" id="sidebar">
+  {Object.entries(chapters).map(([key, ch]) => ch.items.length > 0 && (
+    <section>
+      <h4>{ch.label}</h4>
+      {ch.items.map(p => (
+        <a href={`/${p.slug}`} class={p.slug === currentSlug ? 'current' : ''}>
+          P{p.data.order}. {p.data.title}
+        </a>
+      ))}
+    </section>
+  ))}
+</aside>

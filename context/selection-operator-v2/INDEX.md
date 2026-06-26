@@ -1,0 +1,15 @@
+# Context Index — selection-operator-v2
+
+| File | Phase | Topic | Checkpoints | Last Updated |
+|------|-------|-------|-------------|--------------|
+| 2026-06-11-20-35-problem-restatement-selop.md | Background Context (problem restatement) | 选择算子 f 纯科学问题重述 (去产业实体化, f=φ∘a 理论缺口) | 0 | 2026-06-11 20:35 |
+| 2026-06-11-21-03-northstar-frontal-breakthrough.md | North Star Crystallization (模式转变) | 转向 AI 辅助正面突破 + compute-only sandbox 验证; 侦察→发散→收敛三步 | 0 | 2026-06-11 21:03 |
+| 2026-06-11-22-26-recon.md | 相1 · 侦察 (1b 封存) | φ/f 机制卡点穷举 (15 真卡点; 三层饱和 + 涌现第四层 substrate/假设有效性); 触发 backtrack 回 North Star | 2 | 2026-06-11 22:26 |
+| 2026-06-12-00-07-northstar-recrystallization.md | North Star Crystallization (re-crystallization) | v3 确认: f=σ∘φ∘a, a 双层 a_invivo 也恢复, 目标改可辨识刻画+介入需求; compute-only 仍成立 | 1 | 2026-06-12 00:07 |
+| 2026-06-12-13-59-recon-v3.md | 相1 · 侦察 v3 | 新对象 σ∘φ∘a 侦察: 1a 三处新文献 + 1b 第四层立层18卡点(E1→I3) + 1c σ∘φ∘a底图(死区/可攻区+两判定闸) + 1d 5条更外层越界(H1-5,首选H2测度值过程); 继承recon.md 15卡点 | 4 | 2026-06-12 15:45 |
+| 2026-06-12-15-25-divergence.md | 相2 · 发散 | 18卡点全集 × 三发散路(炸假设/重构数学形态/跨域取经) × 六域 cross-domain; 三路独立收敛到单一骨架: 无静态per-seq φ, 测度值流μ_t(Doi-Peliti场论), f=σ∘φ∘a是三投影, R_irr=Φ算子核=Noether对称(N_e·s标度⊕s−κ移位)轨道, 四语言同构(因果hedge/反问题零奇异向量/场论零模/OT非保守curl) | 3 | 2026-06-12 17:10 |
+| 2026-06-12-16-52-convergence.md | 相3 · 收敛 + 相收尾 | 相2多角度全集→全景地图: feasibility(12候选staged-gate)+求真四轴打分(B2 σ可观测化最高28.0,辨识诚实轴最重删新颖性)+portfolio四层全覆盖(4突破方向组I动力学/II σ攻坚/III辨识收尾/IV理论刻画)+steel-manning轻量; 出局留档(H1-对-S1/H5全形式); 相收尾三相汇总+下一轮入口(对抗+DIY-4升级sandbox+三待验命题) | 5 | 2026-06-12 17:55 |
+| 2026-06-12-21-05-stress-test-init.md | 求真对抗 · 相0 起手 | 登记+锁定攻击对象: 7自建求真skill核对(falsification-first伞+辩证/红队翻转+isomorphism/circular/independent-convergence/elegance四新造)+承重主张清单10条(靶A骨架五条A1-A5含★A4四语言同构/靶B三命题/靶C假独立/靶D sandbox非循环,按load排序)+import(adversarial-stress-testing/counterfactual-probing)弃用(FMEA类别错配)登记 | 1 | 2026-06-12 21:15 |
+| 2026-06-12-21-15-stress-test-noncircular.md | 求真对抗 · 相1 非循环前置闸 | circular-validation-audit: 发现当前sandbox草图=对理论盲的纯数据生成器(降循环风险结构优势); 5×5非循环矩阵(路线甲涌现+记录 vs 乙理论植入,两路循环性相反); CONDITIONAL GREEN-LIGHT+三铁律(引擎个体级不实现测度流PDE/σ-φ噪声-a走涌现/do()真个体级介入); 5个对抗性真值世界(让理论诚实失败); 给相2可攻性输入(纯推理可攻vs须介入vs须wet-lab) | 1 | 2026-06-12 21:25 |
+| 2026-06-12-21-25-stress-test-assault.md | 求真对抗 · 相2 主攻 | 四靶证伪攻击: A4四语言同构=BROKEN建设性降级(rung4,仅②③特例子结构同构rung2,①④类比;curl维≫2/hedge无向量空间结构/catch-bond一对多三monster); A1/A2骨架=动力学层CORROBORATED(禁止1/2硬+风险预测P1/P2)但"统一"须降级(accommodation审计:仅通道1被生成,σ/辨识是独立支柱); 靶B三命题全"特例成立+包络外退化"(①无阈值UNFALSIFIABLE-LEANING/②单连通成立一般BROKEN/③平衡区成立力依赖区BROKEN-catch-bond); 靶C假独立N_eff≈1.3(取经域偏动力学+底图已算子化=我的框架诱导); ★核心产出=须配显式"适用包络"+奥卡姆总答"1动力学原理+2正交支柱+1残余+1包络" | 5 | 2026-06-12 21:35 |
+| 2026-06-12-21-35-stress-test-ledger.md | 求真对抗 · 相3 辩证收口 + 相收尾 | 三桶终裁+FalsificationLedger: 严苛度铁律把骨架动力学从CORROBORATED降为TESTABLE-NOT-YET(P1/P2未实测,本轮无真CORROBORATED); devil's-advocate=骨架"真性质vs框架产物"本轮不可判须判别第四路,但锚在两条框架无关硬禁止(Price协方差/噪声-N_e标度=SUPPORTED)上非海市蜃楼; KAC假设分类(CONVENIENT=A4同构/单一骨架统一=elegance-trap重灾区已降级,ASSERTED=测度流真性质/Φ线性/仅两对称); 诚实残余(R_irr核心/a_invivo真实测量须wet-lab); ★全轮总答=不是18补丁也不是1原理解释一切,而是1动力学原理+2正交支柱+1残余+1适用包络,挣来的简约非装饰简约; 相收尾交棒DIY-4的7条约束 | 4 | 2026-06-12 21:45 |

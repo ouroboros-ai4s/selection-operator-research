@@ -1,0 +1,11 @@
+{
+  "enabledMcpjsonServers": [
+    "alphaxiv",
+    "semantic-scholar",
+    "biorxiv",
+    "brave-search",
+    "wiki-vault",
+    "apify",
+    "runpod"
+  ]
+}

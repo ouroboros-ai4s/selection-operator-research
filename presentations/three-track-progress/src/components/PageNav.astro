@@ -1,0 +1,19 @@
+---
+const { prevSlug, prevTitle, nextSlug, nextTitle } = Astro.props as {
+  prevSlug: string | null;
+  prevTitle: string | null;
+  nextSlug: string | null;
+  nextTitle: string | null;
+};
+---
+<footer class="page-nav" id="page-nav"
+  data-prev={prevSlug ?? ''}
+  data-next={nextSlug ?? ''}>
+  <span class="prev">
+    {prevSlug ? <a href={`/${prevSlug}`}>← {prevTitle}</a> : <span>—</span>}
+  </span>
+  <span class="hint" id="bottom-hint" hidden>继续下滚进入 ↓</span>
+  <span class="next" id="next-link">
+    {nextSlug ? <a href={`/${nextSlug}`}>{nextTitle} →</a> : <span>—</span>}
+  </span>
+</footer>

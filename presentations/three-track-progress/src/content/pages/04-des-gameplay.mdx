@@ -1,0 +1,71 @@
+---
+order: 4
+title: DES 干什么
+chapter: ch2
+---
+
+# DES 干什么
+
+把 DES 当成一款游戏来看，这一页只讲它的内部玩法——地图长什么样、住着谁、每回合发生什么、放着不管会演成什么样。先不管它背后对应什么，就当在读一份游戏说明书。
+
+## 地图与居民
+
+游戏在一张 128×128 的方格地图上进行。每个格子是一小块地盘，地盘有容量上限：最多挤得下 64 个居民，挤爆了就得有人出局。
+
+居民分成**四个阵营**，开局时各自占据地图的一个角（四个象限各一家）。每个居民身上带一串「基因」——可以把它想成这个居民的招式配置。同阵营的居民共享血统，永远是自己人；不同阵营碰头就是敌人。
+
+有三条铁律从头到尾不变：
+
+- **没有目标。** 没有谁规定「哪种招式更强」，游戏不发奖牌，居民不知道自己在往哪进化，只是单纯地活着、繁衍、被淘汰。
+- **强弱是相对的。** 一个招式好不好用，完全取决于对面是谁。这一刻管用，下一刻对手变了就可能失灵——这就是「红皇后」的意思：你得不停跑，才能留在原地。
+- **招式由基因决定，不能手改。** 一个居民能干什么，全写死在它的基因串里，游戏过程中没有任何「裁判」偷偷给谁加成。
+
+## 每回合发生什么
+
+游戏按回合推进，每回合走四步，循环往复：
+
+<svg viewBox="0 0 760 200" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:760px;height:auto;margin:1.5rem 0;font-family:var(--font-sans)">
+  <defs>
+    <marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 z" fill="#A6C0B5"/>
+    </marker>
+    <marker id="arl" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 z" fill="#C3B1BD"/>
+    </marker>
+  </defs>
+  <g>
+    <rect x="10"  y="50" width="150" height="56" rx="8" fill="rgba(107,142,155,0.14)" stroke="#6B8E9B" stroke-width="1.5"/>
+    <text x="85"  y="74" text-anchor="middle" fill="#e8e8e8" font-size="15" font-weight="600">① 拍快照</text>
+    <text x="85"  y="94" text-anchor="middle" fill="#9aa" font-size="12">记下当前地图</text>
+
+    <rect x="210" y="50" width="150" height="56" rx="8" fill="rgba(137,168,148,0.14)" stroke="#89A894" stroke-width="1.5"/>
+    <text x="285" y="74" text-anchor="middle" fill="#e8e8e8" font-size="15" font-weight="600">② 开打</text>
+    <text x="285" y="94" text-anchor="middle" fill="#9aa" font-size="12">跨阵营互相中和</text>
+
+    <rect x="410" y="50" width="150" height="56" rx="8" fill="rgba(166,192,181,0.14)" stroke="#A6C0B5" stroke-width="1.5"/>
+    <text x="485" y="74" text-anchor="middle" fill="#e8e8e8" font-size="15" font-weight="600">③ 繁衍 + 变异</text>
+    <text x="485" y="94" text-anchor="middle" fill="#9aa" font-size="12">生育，基因偶尔突变</text>
+
+    <rect x="610" y="50" width="140" height="56" rx="8" fill="rgba(195,177,189,0.14)" stroke="#C3B1BD" stroke-width="1.5"/>
+    <text x="680" y="74" text-anchor="middle" fill="#e8e8e8" font-size="15" font-weight="600">④ 抢地盘</text>
+    <text x="680" y="94" text-anchor="middle" fill="#9aa" font-size="12">挤爆了就筛人</text>
+
+    <line x1="160" y1="78" x2="206" y2="78" stroke="#A6C0B5" stroke-width="1.6" marker-end="url(#ar)"/>
+    <line x1="360" y1="78" x2="406" y2="78" stroke="#A6C0B5" stroke-width="1.6" marker-end="url(#ar)"/>
+    <line x1="560" y1="78" x2="606" y2="78" stroke="#A6C0B5" stroke-width="1.6" marker-end="url(#ar)"/>
+
+    <path d="M680,106 L680,160 L85,160 L85,108" fill="none" stroke="#C3B1BD" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#arl)"/>
+    <text x="382" y="180" text-anchor="middle" fill="#C3B1BD" font-size="12">回到第一步，下一回合</text>
+  </g>
+</svg>
+
+1. **拍快照** —— 先把整张地图当前的样子完整记下来，留作存档。
+2. **开打** —— 相邻的不同阵营居民互相消耗、彼此中和；同阵营之间从不内斗。
+3. **繁衍 + 变异** —— 活下来的居民生育后代，生育时基因有一定概率发生小突变，于是偶尔会冒出带新招式的后代。
+4. **抢地盘** —— 如果某个格子挤超了 64 人的上限，就得筛掉一批。谁留谁走带一点随机性，不是纯粹论资排辈，给弱势者也留一线机会。
+
+四步走完是一回合，接着回到第一步。这套循环可以一直跑下去，跑几百回合都行。
+
+## 还能边跑边看
+
+除了让游戏在后台闷头跑、把存档攒起来，我们还做了一个叫**验收之眼**的实时观战界面：游戏每推进一回合，画面就刷新一帧，整张 128×128 的地图直接铺在屏幕上——不同阵营用不同颜色区分，某块地盘越拥挤就显示得越浓，正在被争夺的交界格子会混出过渡色。这样既能让程序自动批量跑出大量存档，也能让人坐在屏幕前亲眼盯着这场混战怎么一回合一回合演下去。
