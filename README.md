@@ -1,4 +1,4 @@
-# selection-operator
+# Selection Operator
 
 🚧 Work in progress — design archive, no runnable code yet
 
